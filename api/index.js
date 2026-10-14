@@ -52,8 +52,7 @@ function showToast(){var t=document.getElementById('toast');t.classList.add('sho
     }
 
     // ═══ EXECUTOR: Return script Lua ═══
-    const SCRIPT_URL = "https://raw.githubusercontent.com/USERNAME/script-hub/main/script.lua";
-
+    const SCRIPT_URL = "https://raw.githubusercontent.com/melloxflu/FAZZHUB/main/script.lua";
     try {
         const r = await fetch(SCRIPT_URL, { cf: { cacheTtl: 60 } });
         if (!r.ok) throw new Error("Script not found");
